@@ -15,7 +15,8 @@ mv edge-model.pth checkpoints/.
 mv model.pt MiDaS/.
 
 echo "cloning from BoostingMonocularDepth ..."
-git clone https://github.com/compphoto/BoostingMonocularDepth.git
+# git clone https://github.com/compphoto/BoostingMonocularDepth.git
+git clone https://github.com/yushan777/BoostingMonocularDepth.git
 mkdir -p BoostingMonocularDepth/pix2pix/checkpoints/mergemodel/
 
 echo "downloading mergenet weights ..."
