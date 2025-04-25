@@ -1,9 +1,4 @@
-Forked from [original repo](https://github.com/vt-vl-lab/3d-photo-inpainting)
-
-Updated with more modern dependencies and updated some code to remove deprecated elements.
-
-
-# 3D Photography using Context-aware Layered Depth Inpainting
+# [CVPR 2020] 3D Photography using Context-aware Layered Depth Inpainting
 
 [![Open 3DPhotoInpainting in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1706ToQrkIZshRSJSHvZ1RuCiM__YX3Bz)
 
@@ -28,24 +23,24 @@ In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020.
 
 ## Prerequisites
 
-- Linux (tested on Linux Mint 21.2)
-- Python 3.10 (tested on 3.10.12)
-- PyTorch 2.7.0+cu126 (tested on 2.7.0+cu126 for execution)
+- Linux (tested on Ubuntu 18.04.4 LTS)
+- Anaconda
+- Python 3.7 (tested on 3.7.4)
+- PyTorch 1.4.0 (tested on 1.4.0 for execution)
 
 and the Python dependencies listed in [requirements.txt](requirements.txt)
 - To get started, please run the following commands:
     ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    
-    pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu126
+    conda create -n 3DP python=3.7 anaconda
+    conda activate 3DP
     pip install -r requirements.txt
+    conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit==10.1.243 -c pytorch
     ```
 - Next, please download the model weight using the following command:
     ```bash
     chmod +x download.sh
     ./download.sh
-    ```    
+    ```
 
 ## Quick start
 Please follow the instructions in this section. 
@@ -57,6 +52,7 @@ For more detailed instructions, please refer to [`DOCUMENTATION.md`](DOCUMENTATI
     - E.g., `image/moon.jpg`
 2. Run the following command
     ```bash
+    conda activate 3DP
     python main.py --config argument.yml
     ```
     - Note: The 3D photo generation process usually takes about 2-3 minutes depending on the available computing resources.
