@@ -2,7 +2,7 @@ Forked from this [repository](https://github.com/vt-vl-lab/3d-photo-inpainting).
 
 Updated dependencies and code and removed deprecated elements.  
 
-Converts a 2D image into a 3D mesh and then renders a video simulating camera motion around that mesh. Here's a breakdown of what it does:
+Converts a 2D image into a 3D mesh and then renders a video simulating camera motion around that mesh.
 
 ---
 
