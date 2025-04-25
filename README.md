@@ -2,6 +2,10 @@ Forked from this [repository](https://github.com/vt-vl-lab/3d-photo-inpainting).
 
 Updated dependencies and code and removed deprecated elements.  
 
+Converts a 2D image into a 3D mesh and then renders a video simulating camera motion around that mesh. Here's a breakdown of what it does:
+
+---
+
 # 3D Photography using Context-aware Layered Depth Inpainting
 
 [![Open 3DPhotoInpainting in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1706ToQrkIZshRSJSHvZ1RuCiM__YX3Bz)
