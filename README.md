@@ -23,18 +23,18 @@ In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020.
 
 ## Prerequisites
 
-- Linux (tested on Ubuntu 18.04.4 LTS)
-- Anaconda
-- Python 3.7 (tested on 3.7.4)
-- PyTorch 1.4.0 (tested on 1.4.0 for execution)
+- Linux (tested on Linux Mint 21.2)
+- Python 3.10 
+- PyTorch 2.7
 
 and the Python dependencies listed in [requirements.txt](requirements.txt)
 - To get started, please run the following commands:
     ```bash
-    conda create -n 3DP python=3.7 anaconda
-    conda activate 3DP
+    python3 -m venv venv
+    source venv/bin/activate
+    
+    pip install torch==2.7.0+cu126 torchvision==0.22.0+cu126 --extra-index-url https://download.pytorch.org/whl/cu126
     pip install -r requirements.txt
-    conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit==10.1.243 -c pytorch
     ```
 - Next, please download the model weight using the following command:
     ```bash
