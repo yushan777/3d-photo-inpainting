@@ -1,4 +1,9 @@
-# [CVPR 2020] 3D Photography using Context-aware Layered Depth Inpainting
+Forked from [original repo](https://github.com/vt-vl-lab/3d-photo-inpainting)
+
+Updated with more modern dependencies and updated some code to remove deprecated elements.
+
+
+# 3D Photography using Context-aware Layered Depth Inpainting
 
 [![Open 3DPhotoInpainting in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1706ToQrkIZshRSJSHvZ1RuCiM__YX3Bz)
 
