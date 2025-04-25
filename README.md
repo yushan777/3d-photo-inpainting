@@ -41,6 +41,17 @@ and the Python dependencies listed in [requirements.txt](requirements.txt)
     chmod +x download.sh
     ./download.sh
     ```
+The `download.sh` script will do the following:
+Create a `checkpoints/` directory
+Downloads four model files
+ - Three (`color-model.pth, depth-model.pth, edge-model.pth`)models go into `checkpoints/` directoru.
+ - One (`model.pt`) goes into the `MiDaS/` directory.
+
+Clones the [BoostingMonocularDepth](https://github.com/compphoto/BoostingMonocularDepth.git) repository.
+
+Creates subdirectory `BoostingMonocularDepth/pix2pix/checkpoints/mergemodel/` and downloads 
+Downloads Mergenet weights (`latest_net_G.pth`) into the `BoostingMonocularDepth/pix2pix/checkpoints/mergemodel/` directory.
+Downloads A MiDaS model (`model-f46da743.pt`) into the `BoostingMonocularDepth/midas/` directory.
 
 ## Quick start
 Please follow the instructions in this section. 
